@@ -12,7 +12,7 @@ const Hero = () => {
 
         <div className="flex flex-wrap justify-center gap-4 text-sm max-sm:text-xs">
             <button onClick={() => navigate('/ai')} className="bg-primary text-white px-10 py-3 rounded-lg hover:scale-102 active:scale-95 transition cursor-pointer">Start creating now</button>
-            <button onClick={() => window.open("https://drive.google.com/drive/u/0/my-drive", "_blank")} className="bg-white px-10 py-3 rounded-lg border border-gray-300 hover:scale-102 active:scale-95 transition cursor-pointer">Watch demo</button>
+            <button onClick={() => window.open("https://drive.google.com/file/d/18G6rlMiUEQiedsI40wpNXkrvFAVqZ6EY/view?usp=sharing", "_blank")} className="bg-white px-10 py-3 rounded-lg border border-gray-300 hover:scale-102 active:scale-95 transition cursor-pointer">Watch demo</button>
         </div>
     </div>
     )
