@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Sparkles, Eraser } from 'lucide-react'
 import axios from 'axios'
 import { useAuth } from '@clerk/clerk-react'
@@ -12,17 +12,6 @@ const RemoveBackground = () => {
   const [content, setContent] = useState("");
 
   const { getToken } = useAuth();
-
-  // const handleFileChange = async (e) => {
-  //   const file = e.target.files[0];
-  //   if (!file) return;
-
-  //   if (file.size > 10 * 1024 * 1024) {
-  //     toast.error("Image too large. Please upload an image under 10MB.");
-  //     return;
-  //   }
-  //   setInput(file);
-  // }
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();

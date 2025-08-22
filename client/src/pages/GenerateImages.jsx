@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Sparkles, Image } from 'lucide-react'
 import axios from 'axios'
 import { useAuth } from '@clerk/clerk-react'
-import Markdown from 'react-markdown'
 import toast from 'react-hot-toast'
 
 axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
@@ -62,7 +61,7 @@ const GenerateImages = () => {
             <p className="text-sm">Make this image public</p>
           </div>
 
-          <button disabled={loading} className="w-full flex justify-center items-center gap-2 bg-gradient-to-r from-[#00AD25] to-[#04FF50] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer">
+          <button disabled={loading} className="w-full flex justify-center items-center gap-2 bg-gradient-to-r from-[#3CB371] to-[#6EE7B7] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer">
             {loading ? (
               <span className="w-4 h-4 my-1 rounded-full border-2 border-t-transparent animate-spin"></span>
             ) : (

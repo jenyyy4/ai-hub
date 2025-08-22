@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Markdown from 'react-markdown'
 
 const CreationItem = ({ item }) => {
@@ -11,7 +11,7 @@ const CreationItem = ({ item }) => {
                     <h2>{item.prompt}</h2>
                     <p className="text-gray-500">{item.type} - {new Date(item.created_at).toLocaleDateString()}</p>
                 </div>
-                <button className="bg-[#EFF6FF] border border-[#BFDBFE] text-[#1E40AF] px-4 py-1 rounded-full">{item.type}</button>
+                <button className="bg-[#fae1dd] border border-[#ef476f] text-[#ef476f] px-4 py-1 rounded-full">{item.type}</button>
             </div>
 
             {

@@ -2,7 +2,6 @@ import OpenAI from "openai";
 import sql from "../configs/db.js";
 import { v2 as cloudinary } from "cloudinary";
 import axios from 'axios';
-import fs from "fs";
 import pdf from "pdf-parse/lib/pdf-parse.js"
 
 const AI = new OpenAI({

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Sparkles, Gem } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Sparkles } from 'lucide-react'
 import CreationItem from '../components/CreationItem'
 import axios from 'axios'
 import { useAuth } from '@clerk/clerk-react'
@@ -39,7 +39,7 @@ const Dashboard = () => {
               <p className="text-sm">Total Creations</p>
               <h2 className="text-xl font-semibold">{creations.length}</h2>
             </div>
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#3588F2] to-[#0BB0D7] text-white flex justify-center items-center">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#ef476f] to-[#f4978e] text-white flex justify-center items-center">
               <Sparkles className="w-5 text-white" />
             </div>
           </div>
